@@ -1,0 +1,30 @@
+{
+  "artspot": [
+    {
+      "id": 1,
+      "name": "Une fenêtre vers autre chose",
+      "location": {
+        "latitude": 49.4258193,
+        "longitude": 1.0956223,
+        "address": "1 Rue des Platanes, 76100 Rouen"
+      },
+      "image": "https://static.actu.fr/uploads/2020/06/nelio-fresque-rouen-street-art-2-960x640.jpg",
+      "note": 4.3,
+      "author": "Nelio",
+      "createdAt": "2021-05-28"
+    },
+    {
+      "id": 2,
+      "name": "Le mur de Galet",
+      "location": {
+        "latitude": 49.4240205,
+        "longitude": 1.0957551,
+        "address": "74 Rue Jules Adeline, 76100 Rouen"
+      },
+      "image": "http://www.street-heart.com/Photos//D76000-20-05.jpg",
+      "note": 4.8,
+      "author": "Liz Ponio",
+      "createdAt": "2021-05-28"
+    }
+  ]
+}

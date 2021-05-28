@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>All Spots</ion-title>
+  </ion-toolbar>
+  <div class="div-button-showall">
+    <ion-button class="margin-button" color="medium" [routerLink]="['/']">Back</ion-button>
+    <ion-button class="margin-button" color="medium" [routerLink]="['/add']">Add a Spot !</ion-button>
+  </div>
+</ion-header>
+
+<ion-content>
+  <h2 class="ion-text-center">Around the World and Beyond</h2>
+
+  <div class="content">
+      <ion-card *ngFor="let artspots of artspot" [routerLink]="'/showall/' + artspots.id">
+        <img [src]="artspots.image" [alt]="artspots.name">
+        <ion-card-header>
+          <ion-card-title>
+            {{ artspots.name }}
+          </ion-card-title>
+          <p></p>
+        </ion-card-header>
+        <ion-card-content>
+          {{ artspots.location.address }}
+        </ion-card-content>
+        <ion-card-content>
+          <p class="author">By {{ artspots.author }}</p>
+        </ion-card-content>
+      </ion-card>
+  </div>
+</ion-content>

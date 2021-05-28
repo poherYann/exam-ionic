@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add a New Spot</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="artspotForm" (ngSubmit)="save()">
+    <ion-item>
+      <ion-label>Image (url)</ion-label>
+      <ion-input formControlName="image"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Address</ion-label>
+      <ion-input formControlName="address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Artist</ion-label>
+      <ion-input formControlName="author"></ion-input>
+    </ion-item>
+    <ion-button type="submit" expand="full">Here my NewSpot !</ion-button>
+  </form>
+</ion-content>
+
